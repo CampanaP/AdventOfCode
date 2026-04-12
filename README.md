@@ -20,17 +20,17 @@ Each year's challenges are organized in dedicated directories, with solutions im
 ```
 AdventOfCode/
 ├── 2015/
-│   ├── go/
-│   │   ├── day01/
-│   │   ├── day02/
+│   ├── 01/
+│   │   ├── go/
+│   │   ├── elixir/
 │   │   └── ...
-│   └── elixir/
-│       ├── day01/
-│       ├── day02/
+│   └── 02/
+│       ├── go/
+│       ├── elixir/
 │       └── ...
 ├── 2016/
-│   ├── go/
-│   ├── elixir/
+│   ├── 01/
+│   ├── 02/
 │   └── ...
 ├── ... (additional years)
 └── README.md
@@ -38,8 +38,7 @@ AdventOfCode/
 
 Each day's solution includes:
 - **Implementations** - Complete solutions for both puzzle parts
-- **Input files** - The puzzle input data required for the solutions
-- **README** - Explanation of the approach and key algorithms used
+- **Problem.md** - Explanation of the approach and key algorithms used
 
 ## Languages & Technologies
 
