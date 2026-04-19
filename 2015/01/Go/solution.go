@@ -1,15 +1,15 @@
 package main
 
-var validCharacters = map[rune]int{
+var validInstructions = map[rune]int{
 	'(': 1,
 	')': -1,
 }
 
-func getFloorNumber(input string) int {
+func getFloorNumber(instructions string) int {
 	floorNumber := 0
 
-	for _, char := range input {
-		if value, exist := validCharacters[char]; exist {
+	for _, char := range instructions {
+		if value, exist := validInstructions[char]; exist {
 			floorNumber += value
 		}
 	}
@@ -23,7 +23,7 @@ func getFirstBasementPosition(input string) int {
 	floorNumber := 0
 
 	for index, char := range input {
-		if value, exist := validCharacters[char]; exist {
+		if value, exist := validInstructions[char]; exist {
 			floorNumber += value
 		}
 
