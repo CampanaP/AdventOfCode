@@ -1,36 +1,50 @@
-### Elixir ###
-*/_build
-*/cover
-*/deps
-*/doc
-*/.fetch
-*erl_crash.dump
+# ========================
+# ELIXIR
+# ========================
+/_build/
+/cover/
+/deps/
+/doc/
+/.fetch
+erl_crash.dump
 *.ez
 *.beam
-*/config/*.secret.exs
-*.elixir_ls/
+/config/*.secret.exs
+.elixir_ls/
 
-### Elixir Patch ###
-
-### Go ###
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
+# ========================
+# GO
+# ========================
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
-
-# Test binary, built with `go test -c`
 *.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+/vendor/
+go.work.sum
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# ========================
+# WINDOWS
+# ========================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
 
-# Go workspace file
-go.work
+# ========================
+# ZED
+# ========================
+.zed/
+
+# ========================
+# MISC
+# ========================
+.DS_Store
+*.log
+.env
+.env.local
